@@ -1,23 +1,25 @@
-# Flowchart Renderer
+# 物品过期提醒应用
 
 ## 项目描述
 
-Flowchart Renderer 是一个基于 Next.js 的应用程序，旨在提供一个简单而强大的工具，用于生成和渲染流程图。该项目利用了现代前端技术，支持实时预览和多种自定义选项，适合开发者和设计师使用。
+这是一个基于 Next.js 的物品过期提醒应用，帮助用户管理物品的过期时间。应用提供了物品添加、编辑、搜索、分类管理等功能，并支持多种主题切换。
 
 ## 特性
 
-- 支持多种流程图格式
-- 实时预览功能
-- 友好的用户界面
-- 可扩展的插件系统
+- 物品管理：添加、编辑、删除物品
+- 过期提醒：自动检测即将过期和已过期的物品
+- 搜索功能：支持按名称、分类、备注搜索
+- 分类管理：支持自定义分类
+- 主题切换：支持浅色/深色模式，以及多种颜色主题
+- 响应式设计：适配各种设备尺寸
 
 ## 使用方法
 
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/yourusername/flowchart-renderer.git
-cd flowchart-renderer
+git clone https://github.com/yourusername/expiry-reminder.git
+cd expiry-reminder
 ```
 
 ### 2. 安装依赖
@@ -57,15 +59,25 @@ npm start
 如果你希望使用 Docker 来运行该项目，可以使用以下命令：
 
 ```bash
-docker-compose down flowchart-renderer-dev
-docker-compose up flowchart-renderer-dev
+# 开发环境
+docker-compose up app-dev
+
+# 生产环境
+docker-compose up app
 ```
 
-这将启动应用并在 [http://localhost:5002](http://localhost:5002) 上提供服务。
+这将启动应用并在 [http://localhost:3000](http://localhost:3000) 上提供服务。
 
-## 页面表现
+## 技术栈
 
-![页面表现](image.png)
+- Next.js 15
+- React 18
+- Tailwind CSS
+- shadcn/ui
+- next-themes
+- date-fns
+- React Hook Form
+- Zod
 
 ## 贡献
 
