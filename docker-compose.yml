@@ -12,7 +12,7 @@ services:
       - /app/node_modules
     environment:
       - NODE_ENV=production
-    restart: unless-stopped
+    restart: always
 
 # 开发环境配置
   app-dev:
@@ -27,4 +27,4 @@ services:
     environment:
       - NODE_ENV=development
     command: npm run dev
-    restart: unless-stopped
+    restart: always
